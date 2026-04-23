@@ -1,0 +1,38 @@
+        header {
+            background-color: #093426;
+            position: relative;
+        }
+
+        body {
+            background-color: #79BEA8 !important;
+        }
+
+        .nav-link {
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            border-bottom: 2px solid #ffffff;
+        }
+
+        .footer {
+            background-color: #093426;
+        }
+        
+        .footer p {
+            margin: 0;
+        }
+
+        .social-icon {
+            display: inline-block;
+            margin: 5px;
+            font-size: 20px;
+            color: #E7F3EF;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: #ffffff;
+            transform: scale(1.2);
+        }
