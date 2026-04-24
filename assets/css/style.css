@@ -1,38 +1,74 @@
-        header {
-            background-color: #093426;
-            position: relative;
-        }
+body {
+    font-family: sans-serif !important;
+}
 
-        body {
-            background-color: #79BEA8 !important;
-        }
+header {
+    background-color: #093426;
+    position: relative;
+}
 
-        .nav-link {
-            transition: 0.3s;
-        }
+body {
+    background-color: #79BEA8 !important;
+}
 
-        .nav-link:hover {
-            border-bottom: 2px solid #ffffff;
-        }
+.nav-link {
+    transition: 0.3s;
+}
 
-        .footer {
-            background-color: #093426;
-        }
-        
-        .footer p {
-            margin: 0;
-        }
+.nav-link:hover {
+    border-bottom: 2px solid #ffffff;
+}
 
-        .social-icon {
-            display: inline-block;
-            margin: 5px;
-            font-size: 20px;
-            color: #E7F3EF;
-            transition: 0.3s;
-            text-decoration: none;
-        }
+.footer {
+    background-color: #093426;
+}
 
-        .social-icon:hover {
-            color: #ffffff;
-            transform: scale(1.2);
-        }
+.footer p {
+    margin: 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+    color: #E7F3EF;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.slid-container {
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+}
+
+.card {
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.card img {
+    object-fit: cover;
+    height: 250px;
+}
+
+.card-item {
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .card-item {
+        min-width: 100%;
+    }
+
+    .card img {
+        height: 300px;
+    }
+
+    .mar{
+        padding-top: 25px;
+    }
+}
