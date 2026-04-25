@@ -13,9 +13,29 @@
     <title>SVU Events Hub</title>
 
     <style>
-        h2,h6,h4{
+        h2,
+        h6,
+        h4 {
             font-weight: bold;
-            color:#E7F3EF;
+            color: #E7F3EF;
+        }
+
+        .ids {
+            font-family: serif;
+            font-size: large;
+            font-weight: bold;
+            border: solid 1px #E7F3EF;
+            color: #E7F3EF;
+            font-style: italic;
+            text-align: center;
+            transition: 1.2s;
+            padding: 0px 15px;
+        }
+
+        .ids:hover {
+            color: #ffffff;
+            transform: scale(1.2);
+            cursor: pointer;
         }
     </style>
 
@@ -30,9 +50,10 @@
         <!-- nav start -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><span class="text-warning" style="font-weight: bold;">S</span><span class="text-primary" style="font-weight: bold;">VU</span> Events Hub <img src="assets/img/logo.png"
-                        class="img-fluid" style="border-radius: 45%; width: 40px; height: 40px;"
-                        alt="SVU Events Hub Logo"></a>
+                <a class="navbar-brand" href="index.html"><span class="text-warning"
+                        style="font-weight: bold;">S</span><span class="text-primary"
+                        style="font-weight: bold;">VU</span> Events Hub <img src="assets/img/logo.png" class="img-fluid"
+                        style="border-radius: 45%; width: 40px; height: 40px;" alt="SVU Events Hub Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -59,6 +80,23 @@
 
     </header>
 
+    <!-- IDs Here -->
+    <div class="ms-auto me-2">
+        <button class="btn" style="background-color:#093426; color: #E7F3EF;" data-bs-toggle="collapse"
+            data-bs-target="#ids" aria-controls="ids" aria-expanded="false" aria-label="">Click Here To See IDs</button>
+        <div class="collapse row" id="ids">
+            <div class="col-6">
+                <p class="ids shadow mt-2">Stu_000000</p>
+                <p class="ids shadow mt-2">Stu_000000</p>
+                <p class="ids shadow mt-2">Stu_000000</p>
+            </div>
+            <div class="col-6">
+                <p class="ids shadow mt-2">Stu_000000</p>
+                <p class="ids shadow mt-2">Stu_000000</p>
+            </div>
+        </div>
+    </div>
+
     <!-- header end -->
 
     <!-- main start -->
@@ -69,7 +107,8 @@
 
         <div class="section_1 mt-3">
 
-            <h2 class=""><span class="text-danger" style="font-style: italic;">New</span> Events: </h2>
+            <h2 class=""><span class="text-danger" style="font-style: italic; font-family: serif;">New</span> Events:
+            </h2>
 
             <section class="slid-container d-flex overflow-auto">
 
@@ -121,12 +160,21 @@
             </section>
 
         </div>
+
+        <hr class="bg-dark" style="height: 2px;">
 
         <!-- section 2 -->
 
         <div class="section_2 mt-4">
 
-            <h2>Highlights Events this week:</h2>
+            <h2>Categories:</h2>
+
+            <div class="btn-cate mb-3">
+                <button class="btn btn-info shadow">Family</button>
+                <button class="btn btn-warning shadow">Culture</button>
+                <button class="btn btn-secondary shadow">ِArt</button>
+                <button class="btn btn-success shadow">Sport</button>
+            </div>
 
             <section class="slid-container d-flex overflow-auto">
 
@@ -179,10 +227,14 @@
 
         </div>
 
+        <hr class="bg-dark" style="height: 2px;">
+
         <!-- section 3 -->
 
         <div class="section_3 mt-4">
-            <h2>Categories:</h2>
+
+            <h2><span class="text-success">Highlights</span> Events this week:</h2>
+
             <section class="slid-container d-flex overflow-auto">
 
                 <div class="card flex-shrink-0 shadow card-item" style="width: 18rem;">
@@ -245,7 +297,8 @@
             <div class="row text-center">
 
                 <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                    <h4 class="text-white mb-2"><span class="text-warning">S</span><span class="text-primary">VU</span> Events Hub</h4>
+                    <h4 class="text-white mb-2"><span class="text-warning">S</span><span class="text-primary">VU</span>
+                        Events Hub</h4>
 
                     <p class="text-white">It's is a platform that helps students find events quickly and easily.</p>
                     <a href="login.html" class="" style="text-decoration: none;">Login Now</a>
