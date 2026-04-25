@@ -27,6 +27,31 @@ body {
     margin: 0;
 }
 
+.ids {
+    font-family: serif;
+    font-size: large;
+    font-weight: bold;
+    border: solid 1px #E7F3EF;
+    color: #E7F3EF;
+    font-style: italic;
+    text-align: center;
+    transition: 1.2s;
+    padding: 0px 15px;
+}
+
+.ids:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+h2,
+h6,
+h4 {
+    font-weight: bold;
+    color: #E7F3EF;
+}
+
 .social-icon {
     display: inline-block;
     margin: 5px;
@@ -40,13 +65,8 @@ body {
     transform: scale(1.2);
 }
 
-.slid-container {
-    scroll-snap-type: x mandatory;
-    gap: 1rem;
-}
-
 .card {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     position: relative;
 }
 
@@ -59,6 +79,11 @@ body {
     min-width: 300px;
 }
 
+.slid {
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+}
+
 @media (max-width: 768px) {
     .card-item {
         min-width: 100%;
@@ -68,7 +93,12 @@ body {
         height: 300px;
     }
 
-    .mar{
+    .mar-footer {
         padding-top: 25px;
+    }
+
+    .card {
+        margin-right: 10%;
+        margin-left: 10%;
     }
 }
