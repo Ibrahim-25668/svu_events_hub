@@ -1,0 +1,152 @@
+body {
+    font-family: sans-serif !important;
+    background-color: #79BEA8 !important;
+}
+
+header {
+    background-color: #093426;
+    position: relative;
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.footer {
+    background-color: #093426;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.ids {
+    background-color: #448D76;
+    font-family: serif;
+    font-size: large;
+    font-weight: bold;
+    border: solid 1px #E7F3EF;
+    color: #E7F3EF;
+    font-style: italic;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+
+h2,
+h6,
+h4 {
+    font-weight: bold;
+    color: #E7F3EF;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+    color: #E7F3EF;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.card {
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.card img {
+    object-fit: cover;
+    height: 250px;
+}
+
+.card-item {
+    min-width: 300px;
+}
+
+.slid {
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .card-item {
+        min-width: 100%;
+    }
+
+    .card img {
+        height: 300px;
+    }
+
+    .mar-footer {
+        padding-top: 25px;
+    }
+
+    .card {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+.font-sty {
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.card-about{
+    background-color: #448D76 !important;
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background-color: #1d1d1d !important;
+    color: #ffffff !important;
+}
+
+body.dark .navbar {
+    background-color: #333 !important;
+}
+
+body.dark .card {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+body.dark .list-group-item {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark footer {
+    background-color: #333;
+}
+
+body.dark .font-sty {
+    color: #13df3f;
+}
+
+body.dark .table {
+    color: #fff !important;
+}
+
+body.dark .table th,
+body.dark .table td {
+    border-color: #555 !important;
+    background-color: #333;
+}
+
+body.dark .ids {
+    background-color: #555 !important;
+    color: #fff !important;
+    border-color: #777 !important;
+}
